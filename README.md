@@ -1,4 +1,6 @@
 Blockchain & Consensus Mechanism Simulation
+
+
 This repository contains Python scripts that simulate fundamental concepts of blockchain technology and various consensus mechanisms. It's designed to provide a hands-on understanding of how blocks are structured, how Proof-of-Work (PoW) mining operates, and how different consensus algorithms (PoW, Proof-of-Stake, Delegated Proof-of-Stake) select validators.
 Table of Contents
 Project Overview
