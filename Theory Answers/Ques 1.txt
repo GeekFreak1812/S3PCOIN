@@ -1,0 +1,33 @@
+Q: Define blockchain in your own words (100–150 words):
+
+A blockchain is basically a shared digital notebook that’s stored across many computers, where every page (or “block”) records a list of transactions. Once something is written, it can’t be changed or erased. Each block includes the transaction details, a timestamp, and a special link (called a hash) to the previous block—this creates a continuous, unbreakable chain of information. What makes blockchain special is that there’s no single person or organization in control. Instead, everyone involved follows strict cryptographic rules and agrees on what’s valid through something called a consensus mechanism. Because of this, it’s very difficult to tamper with anything once it's been added. So, in simple terms, blockchain acts like a public notebook where everything is transparent and secure, making it perfect for systems where you need trustworthy, verifiable data without relying on a middleman.
+
+2 Real Life Cases
+Supply Chain Tracking – Companies like Walmart use blockchain to trace food products from farm to shelf, ensuring authenticity and reducing fraud or contamination risks.
+
+Digital Identity – Governments and startups use blockchain to give people verifiable digital IDs, especially useful in regions lacking formal identification systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+Q: Draw a block showing: data, previous hash, timestamp, nonce, and Merkle root:
+
+
+             BLOCK                   
+
+ Timestamp     : 2025-06-09 12:30:00    
+ Nonce         : 48291                 
+ Previous Hash : 00003ae...c591         
+ Merkle Root   : 4c8e2d1...b679 
+ Data          :                        
+   - Txn1: A → B (5 BTC)        
+   - Txn2: B → C (2 BTC)                
+   - Txn3: A → D (3 BTC)                
+
+Q: How does the Merkle root help verify data integrity?
+
+The Merkle root is the top hash of a binary tree formed by repeatedly hashing pairs of transaction hashes until only one hash remains. It provides a compact way to verify whether a specific transaction exists in the block without revealing all data. For example, if someone claims a transaction "A → D (3 BTC)" is part of a block, we can hash this transaction and follow the path up the tree, comparing it to the Merkle root. If the final hash matches, we confirm its inclusion. This keeps verification fast and secure, especially when dealing with large numbers of transactions.

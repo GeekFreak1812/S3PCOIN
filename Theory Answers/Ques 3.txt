@@ -1,0 +1,11 @@
+Q: What is Proof of Work and why does it require energy?
+
+Proof of Work (PoW) is a consensus mechanism where miners compete to solve complex mathematical puzzles to validate transactions and add new blocks to the blockchain. This process requires significant computing power and electricity because miners must try many different nonces to find the correct hash that meets the network’s difficulty level. It ensures that adding a block isn’t easy, making the network secure against attacks. The energy use is a result of this trial-and-error process, which, while inefficient, adds a layer of security through cost and effort.
+
+Q: What is Proof of Stake and how does it differ?
+
+Proof of Stake (PoS) selects validators based on how much cryptocurrency they “stake” or lock up as collateral. Instead of using energy-intensive computations like PoW, PoS validators are chosen to create blocks based on their stake and sometimes random factors. It’s much more energy-efficient since it doesn’t require solving puzzles. The idea is that those with more at stake are incentivized to act honestly, as malicious behavior could result in losing their staked funds.
+
+Q: What is Delegated Proof of Stake and how are validators selected?
+
+Delegated Proof of Stake (DPoS) is a variant of PoS where token holders vote for a small group of delegates or validators who then produce blocks and validate transactions. It’s like electing trusted representatives to maintain the blockchain. Validators are selected based on community votes, and they can be replaced if they act dishonestly or perform poorly. This system improves speed and scalability while maintaining decentralization through democratic voting.
