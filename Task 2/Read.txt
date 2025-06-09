@@ -1,0 +1,39 @@
+2. nonce_mining_simulation.py - Proof-of-Work (PoW) with Nonce Mining
+
+This script extends the basic block concept to simulate the Proof-of-Work (PoW) consensus mechanism, specifically focusing on the "mining" process where a nonce is found to satisfy a difficulty target.
+Core Concepts Illustrated:
+Proof-of-Work (PoW): The simulation demonstrates how computational work (repeated hashing) is performed to find a valid block hash.
+Difficulty Target: A difficulty_prefix is set (e.g., "0000"), meaning a valid block hash must start with that specific string of characters. This mimics the cryptographic puzzle miners solve.
+Nonce (nonce): The nonce is a crucial arbitrary number that miners adjust to change the block's hash until it meets the difficulty target.
+Computational Cost: The script measures and prints the number of attempts and the time taken to find a valid nonce, illustrating the inherent computational cost of PoW.
+Step-by-Step Explanation:
+Import Libraries:
+hashlib, datetime (same as Block_Simulation.py).
+time: Used to measure the time elapsed during the mining process.
+S3PCOINBlock Class (Extended):
+The __init__ and calculate_hash methods are identical to Block_Simulation.py, providing the base block structure.
+mineBlock(self, difficulty_prefix) method:
+Takes difficulty_prefix (e.g., "0000") as an argument, which defines the target for the block's hash.
+Records the start_time and initializes an attempts counter.
+Enters a while True loop:
+Recalculates the self.block_hash using the current nonce and other block data.
+Increments attempts.
+Checks for Difficulty: if self.block_hash.startswith(difficulty_prefix): - If the calculated hash matches the difficulty_prefix, a valid hash is found.
+If valid: records end_time, calculates time_taken, prints the number of attempts, time_taken, and the found block_hash. The loop then breaks.
+If not valid: increments self.nonce by 1 and the loop continues, trying a new hash.
+Example Usage:
+Transactions: Sample transactions are defined.
+Initial Block Mining:
+An initial_block is created.
+difficulty = "0000" is set.
+initial_block.mineBlock(difficulty) is called, initiating the PoW process.
+The details of the mined initial_block (including its final nonce and hash) are printed.
+Second Block Mining:
+A second_block is created, linked to the initial_block's hash.
+second_block.mineBlock(difficulty) is called to mine it with the same difficulty.
+Its mined details are printed.
+Third Block Mining (Higher Difficulty):
+A third_block is created, linked to the second_block's hash.
+higher_difficulty = "00000" is set, illustrating that increasing the number of leading zeros significantly increases the computational work required.
+third_block.mineBlock(higher_difficulty) is called.
+Its mined details are printed, showcasing the impact of higher difficulty on attempts and time.
